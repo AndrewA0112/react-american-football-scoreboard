@@ -6,6 +6,7 @@ import TopRow from "./components/TopRow"
 import HomeButtons from "./components/HomeButtons";
 import AwayButtons from "./components/AwayButtons";
 
+
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [homeScore, homeSetScore] = useState(0);
@@ -18,8 +19,8 @@ function App() {
         <BottomRow />
       </section>
       <section className="buttons">
-        <HomeButtons homeScore = {homeScore} homeSetScore = {homeSetScore}/>
-        <AwayButtons awayScore = {awayScore} awaySetScore = {awaySetScore}/>
+        <HomeButtons homeScore = {homeScore} homeSetScore = {homeSetScore} awayScore = {awayScore} awaySetScore = {awaySetScore}/>
+        {/* <AwayButtons awayScore = {awayScore} awaySetScore = {awaySetScore}/> */}
       </section>
     </div>
   );
